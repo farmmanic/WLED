@@ -21,6 +21,7 @@ jobs:
         python-version: '3.9'
     - name: upgrade pip
       run: pip install --upgrade pip
+           pip-compile
     - name: Install PlatformIO
       run: pip install -r requirements.txt
     - name: Get default environments
